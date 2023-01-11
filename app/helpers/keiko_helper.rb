@@ -1,0 +1,2 @@
+module KeikoHelper
+end
