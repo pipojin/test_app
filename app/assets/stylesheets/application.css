@@ -14,3 +14,37 @@ h1 {
     width: 0;
     height: 0;
   }
+
+  ul {
+    padding: 0;
+    position: relative;
+  }
+  
+  ul li {
+    color: white;
+    background: #81d0cb;
+    line-height: 1.5;
+    padding: 0.5em 0.5em 0.5em 2em;
+    border-bottom: 2px solid white;
+    list-style-type: none!important;
+    font-weight: bold; /*好みで太字に*/
+  }
+  
+  ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f14a";
+    position: absolute;
+    left : 0.5em; /*左端からのアイコンまでの距離*/
+    color: white; /*アイコン色*/
+  }
+  
+  ul a{
+    color:#e0edff;
+    text-decoration: none;
+
+  }
+
+  ul li a:hover{
+    color:aliceblue;
+    text-decoration: none;
+}
