@@ -1,50 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #06176c;
+  letter-spacing : 0.2em;
+}
+header {
+  padding: 30px 4% 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
 h1 {
-    position: relative;
-    padding: 0.6em;
-    background: #e0edff;
-  }
-  
-  h1:after {
-    position: absolute;
-    content: '';
-    top: 100%;
-    left: 30px;
-    border: 15px solid transparent;
-    border-top: 15px solid #e0edff;
-    width: 0;
-    height: 0;
-  }
+  margin: 0; padding: 0;
+  font-size: 20px;
+}
+a {	
+  text-decoration: none;
+  color: #fff;
+}
+nav {
+  margin: 0 0 0 auto;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+li {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+}
+.main-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('main_visual.jpg') top center / cover no-repeat;
+}
+h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+  color: #fff;
+}
 
-  ul {
-    padding: 0;
-    position: relative;
-  }
-  
-  ul li {
-    color: white;
-    background: #81d0cb;
-    line-height: 1.5;
-    padding: 0.5em 0.5em 0.5em 2em;
-    border-bottom: 2px solid white;
-    list-style-type: none!important;
-    font-weight: bold; /*好みで太字に*/
-  }
-  
-  ul li:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f14a";
-    position: absolute;
-    left : 0.5em; /*左端からのアイコンまでの距離*/
-    color: white; /*アイコン色*/
-  }
-  
-  ul a{
-    color:#e0edff;
-    text-decoration: none;
-
-  }
-
-  ul li a:hover{
-    color:aliceblue;
-    text-decoration: none;
+.main{
+  margin-top: 100px;
+  padding: 100px 4% 10px;
+  background-color: #fff;
 }

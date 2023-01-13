@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>myTODO</title>
+    <title>work_memo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,7 +9,19 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
-  <body>
+  
+  <header>
+  <h1>
+      <a href="/">work_memo</a>
+  </h1>
+  <nav class="pc-nav">
+    <ul>
+    <li><%= link_to("参考URL","/link/index") %></li>
+    <li><%= link_to("TOP","/keiko/top") %></li>
+  </ul>
+  </nav>
+  </header>
+  <body> 
     <%= yield %>
   </body>
 </html>
